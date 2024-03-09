@@ -16,9 +16,14 @@ func main() {
 
 	var fileName, fileExt string
 	// Напишите код, который выведет следующее
-	
-	fileName = filePth[strings.LastIndex(filePth,"/")+1: strings.LastIndex(filePth,".")]
-	fileExt = filePth[strings.LastIndex(filePth,".")+1: len(filePth)]
+	pointIndex := strings.LastIndex(filePth,".")
+	if pointIndex >= 0{
+		fileName = filePth[strings.LastIndex(filePth,"/")+1: strings.LastIndex(filePth,".")]
+		fileExt = filePth[strings.LastIndex(filePth,".")+1: len(filePth)]
+		} else {
+			fileName = filePth[strings.LastIndex(filePth,"/")+1: len(filePth)]
+			fileExt = ""
+		}
 	// filename: <name>
 	// extension: <extension>
 
