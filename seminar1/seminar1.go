@@ -19,9 +19,9 @@ func main() {
 	pointIndex := strings.LastIndex(filePth,".")
 	if pointIndex >= 0{
 		fileName = filePth[strings.LastIndex(filePth,"/")+1: strings.LastIndex(filePth,".")]
-		fileExt = filePth[pointIndex+1: len(filePth)]
+		fileExt = filePth[pointIndex+1:]
 		} else {
-			fileName = filePth[strings.LastIndex(filePth,"/")+1: len(filePth)]
+			fileName = filePth[strings.LastIndex(filePth,"/")+1:]
 			fileExt = ""
 		}
 	// filename: <name>
