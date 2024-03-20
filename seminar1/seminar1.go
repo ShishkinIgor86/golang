@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 package main
 
 import (
@@ -36,6 +37,8 @@ func main() {
 
 }
 =======
+=======
+>>>>>>> 09aa456a70fe3968c96a2870ea63a4560733da0b
 package main
 
 import (
@@ -72,4 +75,7 @@ func main() {
 	fmt.Printf("extension: %s\n", fileExt)
 
 }
+<<<<<<< HEAD
 >>>>>>> cc7f0b1 (is done)
+=======
+>>>>>>> 09aa456a70fe3968c96a2870ea63a4560733da0b
